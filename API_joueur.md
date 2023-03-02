@@ -53,8 +53,6 @@ https://apiv1.skylord.fr/api/joueur/wallet?pseudo=VOTE_PSEUDO
         }, {
             "jmaxlvl": "{@Valeur : FLOAT}"
         }, {
-            "jlevel": "{@Valeur : FLOAT}"
-        }, {
             "jexp": "{@Valeur : FLOAT}"
         }, {
             "jmaxexp": "{@Valeur : FLOAT}"
