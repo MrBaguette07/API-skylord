@@ -3,58 +3,58 @@
 Route : <b>/api/joueur</b>
 
 <b>Récupérer la money d'un joueur</b>
-{"GET" : "/money",
-"Value" : ["application/json","Access-Control-Allow-Origin"],
-"Paramètres" : [
-   {"pseudo" : "Le pseudo du joueur"}
-],
-"Réponse" : [
-  {"Format": "{@Money du joueur : STR}"},
-  {"Devise": "{@Symbol de la money : INT}"}
-]}
-
+{"GET" : "/money",<br>
+"Value" : ["application/json","Access-Control-Allow-Origin"],<br>
+"Paramètres" : [<br>
+   {"pseudo" : "Le pseudo du joueur"}<br>
+],<br>
+"Réponse" : [<br>
+  {"Format": "{@Money du joueur : STR}"},<br>
+  {"Devise": "{@Symbol de la money : INT}"}<br>
+]}<br>
+<br>
 Exemple : https://api.skylord.fr/api/joueur/money?pseudo=VOTE_PSEUDO
-
-
-<b>Récupérer le wallet d'un joueur</b>
-{"GET" : "/wallet",
-"Value" : ["application/json","Access-Control-Allow-Origin"],
-"Paramètres" : [
-   {"pseudo" : "Le pseudo du joueur"}
-],
-"Réponse" : [
-    {"wallet": [
-        {"{@Crypto sous format en USDT : STR}": "{@Nombre de crypto du joueur : FLOAT}"}
-    ]}
-]}
-
-Exemple : https://apiv1.skylord.fr/api/joueur/wallet?pseudo=VOTE_PSEUDO
-
-
-<b>Récupérer les jobs d'un joueur</b>
-{"GET" : "/jobs",
-"Value" : ["application/json","Access-Control-Allow-Origin"],
-"Paramètres" : [
-   {"pseudo" : "Le pseudo du joueur"},
-   {"jobs" : "Le Job du joueur (Bucheron, Pecheur, Aventurier, Architecte, Chasseur, Fermier, Mineur, all)"}
-],
-"Réponse" : [
-    {"Resultat": "{@Code de résultat, 404 = Non trouvable, 01 = Trouvable : STR}"},
-    {"jobs": [{
-        "{@Nom du job : STR}": [{
-            "jlevel": "{@Valeur : FLOAT}"
-        }, {
-            "jmaxlvl": "{@Valeur : FLOAT}"
-        }, {
-            "jlevel": "{@Valeur : FLOAT}"
-        }, {
-            "jexp": "{@Valeur : FLOAT}"
-        }, {
-            "jmaxexp": "{@Valeur : FLOAT}"
-        }]
-    }]
-}]}
-
-Exemple : 
-https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=all
-https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=Mineur
+<br>
+<br>
+<b>Récupérer le wallet d'un joueur</b><br>
+{"GET" : "/wallet",<br>
+"Value" : ["application/json","Access-Control-Allow-Origin"],<br>
+"Paramètres" : [<br>
+   {"pseudo" : "Le pseudo du joueur"}<br>
+],<br>
+"Réponse" : [<br>
+    {"wallet": [<br>
+        {"{@Crypto sous format en USDT : STR}": "{@Nombre de crypto du joueur : FLOAT}"}<br>
+    ]}<br>
+]}<br>
+<br>
+Exemple : https://apiv1.skylord.fr/api/joueur/wallet?pseudo=VOTE_PSEUDO<br>
+<br>
+<br>
+<b>Récupérer les jobs d'un joueur</b><br>
+{"GET" : "/jobs",<br>
+"Value" : ["application/json","Access-Control-Allow-Origin"],<br>
+"Paramètres" : [<br>
+   {"pseudo" : "Le pseudo du joueur"},<br>
+   {"jobs" : "Le Job du joueur (Bucheron, Pecheur, Aventurier, Architecte, Chasseur, Fermier, Mineur, all)"}<br>
+],<br>
+"Réponse" : [<br>
+    {"Resultat": "{@Code de résultat, 404 = Non trouvable, 01 = Trouvable : STR}"},<br>
+    {"jobs": [{<br>
+        "{@Nom du job : STR}": [{<br>
+            "jlevel": "{@Valeur : FLOAT}"<br>
+        }, {<br>
+            "jmaxlvl": "{@Valeur : FLOAT}"<br>
+        }, {<br>
+            "jlevel": "{@Valeur : FLOAT}"<br>
+        }, {<br>
+            "jexp": "{@Valeur : FLOAT}"<br>
+        }, {<br>
+            "jmaxexp": "{@Valeur : FLOAT}"<br>
+        }]<br>
+    }]<br>
+}]}<br>
+<br>
+Exemple : <br>
+https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=all<br>
+https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=Mineur<br>
