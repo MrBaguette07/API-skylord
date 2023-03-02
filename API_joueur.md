@@ -58,7 +58,8 @@ Exemple : https://apiv1.skylord.fr/api/joueur/wallet?pseudo=VOTE_PSEUDO
             "jmaxexp": "{@Valeur : FLOAT}"
         }]
     }]
-}]}```
+}]}
+```
 
 Exemple : 
 https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=all
