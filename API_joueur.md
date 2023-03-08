@@ -58,9 +58,14 @@ https://apiv1.skylord.fr/api/joueur/wallet?pseudo=VOTE_PSEUDO
             "jmaxexp": "{@Valeur : FLOAT}"
         }]
     }]
-}]}
+}],
+"Erreurs" : [
+    {"01" : "Le serveur arrive a récupérer les informations"},
+    {"998" : "Le joueur n'est pas en ligne ou n'existe pas"},
+    {"404" : "Le job est introuvable"},
+]}
 ```
 
-Exemple : <br>
-https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=all <br>
-https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=Mineur
+Exemple : 
+``https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=all``
+``https://apiv1.skylord.fr/api/joueur/jobs?pseudo=VOTE_PSEUDO&jobs=Mineur``
