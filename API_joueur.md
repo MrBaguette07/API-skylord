@@ -16,7 +16,7 @@ Route : <b>/api/joueur</b>
 ```
 
 Exemple : <br>
-https://api.skylord.fr/api/joueur/money?pseudo=VOTE_PSEUDO
+``https://api.skylord.fr/api/joueur/money?pseudo=VOTE_PSEUDO``
 
 
 <b>Récupérer le wallet d'un joueur</b>
@@ -34,7 +34,7 @@ https://api.skylord.fr/api/joueur/money?pseudo=VOTE_PSEUDO
 ```
 
 Exemple : <br>
-https://apiv1.skylord.fr/api/joueur/wallet?pseudo=VOTE_PSEUDO
+``https://apiv1.skylord.fr/api/joueur/wallet?pseudo=VOTE_PSEUDO``
 
 
 <b>Récupérer les jobs d'un joueur</b>
